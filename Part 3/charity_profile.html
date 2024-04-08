@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>HelpHub-profile</title>
+
+    <style>
+        #toggleButton {
+            border: none;
+            height: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            background-color: black;
+            padding: 0px 25px;
+            border-radius: 25px;
+            color: #7a6ad8;
+            transition: all .4s;
+            position: relative;
+            z-index: 3;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .info-label {
+            font-weight: bold;
+            flex-basis: 150px;
+        }
+    </style>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/helphub.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+
+
+    <div>
+        <!-- ***** Header Area Start ***** -->
+        <header class="header-area header-sticky">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="main-nav">
+                            <!-- ***** Logo Start ***** -->
+                            <a href="index.html" class="logo">
+                                <H1 style="text-transform: capitalize;">HelpHub</H1>
+                            </a>
+
+                            <!-- ***** Menu Start ***** -->
+                            <ul class="nav">
+                                <li class="scroll-to-section"><a href="index.html">Home</a></li>
+                                <li class="scroll-to-section"><a href="charities.html">Charities</a></li>
+                                <li class="scroll-to-section"><a href="about.html">About</a></li>
+                            </ul>
+                            <a class='menu-trigger'>
+                                <span>Menu</span>
+                            </a>
+                            <!-- ***** Menu End ***** -->
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- ***** Header Area End ***** -->
+
+        <div class="main-banner" id="top" style="background-position: unset; border-radius: 0px 0px 150px 150px; padding-top: 50px;">
+
+        </div>
+
+
+    </div>
+
+
+    <section class="section courses" id="courses" style="margin-top: 0px;">
+        <div class="container" style="max-width: none;">
+            <div class="row">
+                <div class="col-lg-12 text-center" style="padding-left: 0px;">
+                    <div class="section-heading">
+                        <h6>welcome to</h6>
+                        <h2 id="info_name_title">Charity Name</h2>
+                    </div>
+
+
+
+
+                    <div class="contact-us section" id="contact">
+                        <div class="container" style="max-width: none;">
+                            <div class="row">
+                                <div class="col-lg-6  align-self-center" style="text-align: justify; align-self: unset !important; padding-left: 30px;">
+                                    <div class="section-heading">
+
+                                        <h2>Charity Profile</h2>
+                                        <div class="info-item">
+                                            <div class="info-label">Charity Name:</div>
+                                            <div><span id="info_name">XYZ Charity</span></div>
+                                        </div>
+                                        <div class="info-item">
+                                            <div class="info-label">Mission:</div>
+                                            <div><span id="info_mission">Education, Healthcare, Poverty Alleviation</span></div>
+                                        </div>
+
+                                        <div class="info-item">
+                                            <div class="info-label">Founding Year:</div>
+                                            <div>2015</div>
+                                        </div>
+                                        <div class="info-item">
+                                            <div class="info-label">Legal Status:</div>
+                                            <div>Registered as a nonprofit organization</div>
+                                        </div>
+                                        <div class="info-item">
+                                            <div class="info-label">Geographic Scope:</div>
+                                            <div>USA</div>
+                                        </div>
+                                        <div class="info-item">
+                                            <div class="info-label">Tax Deductibility:</div>
+                                            <div>Deductible</div>
+                                        </div>
+                                        <div class="info-item">
+                                            <div class="info-label">Annual Budget:</div>
+                                            <div>$500,000</div>
+                                        </div>
+                                        <div class="info-item">
+                                            <div class="info-label">Address:</div>
+                                            <div>123 Main Street, City, Country</div>
+                                        </div>
+                                        <div class="info-item">
+                                            <div class="info-label">Email Address:</div>
+                                            <div>xyzcharity@gmail.com</div>
+                                        </div>
+                                        <div class="info-item">
+                                            <div class="info-label">Phone:</div>
+                                            <div>(123) 456-7890</div>
+                                        </div>
+
+
+
+
+
+
+
+                                        <button id="toggleButton" onclick="toggleDiv()">Volunteer Now</button>
+
+                                    </div>
+                                </div>
+                                <div id="hiddenDiv" class="col-lg-6" style="opacity: 0; transition: opacity 0.3s ease, height 0.3s ease;">
+                                    <div class="contact-us-content">
+                                        <form id="contact-form" action="" method="post">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <fieldset>
+                                                        <input type="name" name="name" id="name" placeholder="Your Name..." autocomplete="on" required>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <fieldset>
+                                                        <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." required="">
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <fieldset>
+                                                        <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <fieldset>
+                                                        <button type="submit" id="form-submit" class="orange-button">Submit</button>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer style="min-height: 300px; margin-top: 200px;">
+        <div class="container">
+            <div class="col-lg-12">
+                <p>Copyright © 2024 CSC IV. All rights reserved. &nbsp;&nbsp;&nbsp; Design: <a href="" rel="nofollow" target="_blank">Rashid Alshrouki </a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
